@@ -69,37 +69,40 @@ print(non_vowels)
 #8. Find the capital letters (and not white space) in the sentence 'The Quick Brown Fox Jumped Over The Lazy Dog'. 
 # Use capital_letters as the name of the list.  
 # Remember to use list comprehensions and to print your results
+'''
+s ='The Quick Brown Fox Jumped Over The Lazy Dog'
 
-Lazy='The Quick Brown Fox Jumped Over The Lazy Dog'
-
-Capital_letters=[]
+Capital_letters=[''.join([c for c in s if c.isupper()])]
 
 print(Capital_letters)
-
+'''
 
 
 #9. Find all the consonants in the sentence 'The quick brown fox jumped over the lazy dog'.
 # Use consonants as the name of the list.
 # Remember to use list comprehensions and to print your results.
-
+'''
 Lazy='The Quick Brown Fox Jumped Over The Lazy Dog'
+vowels ='aeiou'
+consonants=[i for i in Lazy if i not in vowels]
+print(consonants)
+'''
 
-aConso=[]
-print(aConso)
-
-
-#10. Find the folders you have in your madrid-oct-2018 local repo. Use files as name of the list.  
+#10. Find the folders you have in your madrid-oct-2028 local repo. Use files as name of the list.  
 # You will probably need to import os library and some of its modules. You will need to make some online research.
 # Remember to use list comprehensions and to print your results.
 
+import os
+datamad =[i for i in os.listdir('/home/danielgarcia/datamad0820')]
+print (datamad)
 
-
-#11. Create 4 lists of 10 random numbers between 0 and 100 each. Use ran
-'''dom_lists as the name of the list.''' 
+#11. Create 4 lists of 10 random numbers between 0 and 100 each. Use random_lists as the name of the list. 
 #You will probably need to import random module
 # Remember to use list comprehensions and to print your results
 
-
+import random
+random_list= []
+random_list= [for i]
 
 
 #12. Flatten the following list of lists. Use flatten_list as the name of the output.
