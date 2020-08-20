@@ -14,7 +14,6 @@ import math
 #1. Calculate the square number of the first 20 numbers. Use square as the name of the list.
 # Remember to use list comprehensions and to print your results
 
-sqnmb= []
 sqnmb = [i*i for i in range(1,21)] 
 print(sqnmb)
 
@@ -34,7 +33,6 @@ print (sqrt)
 #4. Create this list [-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0]. Use my_list as the name of the list.
 # Remember to use list comprehensions and to print your results
 
-my_list=[]
 my_list=[i for i in range (-10,1)]
 print(my_list)
 
@@ -157,10 +155,10 @@ except IndexError:
 
 while True:
     try:
-        a= (input('Por favor introduzcame un numero de manera delicada: '))
+        a= (input('Por favor introduzcame un numero: '))
         break
     except ValueError:
-        print ('Eso no era un numero jipi colgao! prueba de nuevo')
+        print ('Eso no era un numero prueba de nuevo')
 
 #18. Handle the exception thrown by the code below by using try and except blocks. 
 # Check in provided resources the type odivisible_by_sevenf error you may use. 
