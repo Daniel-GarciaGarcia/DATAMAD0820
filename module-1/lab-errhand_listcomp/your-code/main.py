@@ -21,7 +21,6 @@ print(sqnmb)
 #2. Calculate the first 50 power of two. Use power_of_two as the name of the list.
 # Remember to use list comprehensions and to print your results
 
-power_of_two=[]
 power_of_two= [2**i for i in range(1,51)] 
 print(power_of_two)
 
@@ -29,7 +28,6 @@ print(power_of_two)
 # You will probably need to install math library with pip and import it in this file.  
 # Remember to use list comprehensions and to print your results
 
-sqrt= []
 sqrt= [i**0.5 for i in range(0,101)]
 print (sqrt)
 
@@ -59,8 +57,7 @@ print(divisible_by_seven)
 
 teststring = 'Find all of the words in a string that are monosyllabic'
 vowels= 'aeiou'
-non_vowels= []
-non_vowels= [i for i in teststring if not in 'aeiou']
+non_vowels= [i for i in teststring if i not in 'aeiou']
 print(non_vowels)
 
 #8. Find the capital letters (and not white space) in the sentence 'The Quick Brown Fox Jumped Over The Lazy Dog'. 
@@ -210,7 +207,10 @@ print(' Linux manda y no tu panda')
 # Hint: we need to continually keep checking until we get an integer.
 # Use a while loop with a try,except, else block to account for incorrect inputs.
 
+def  square (num):
+	return (num*num)
 
+n = int (input("Introduce un numero: "))
 
 
 # 22. Find all of the numbers from 1-1000 that are divisible by any single digit besides 1 (2-9). 
