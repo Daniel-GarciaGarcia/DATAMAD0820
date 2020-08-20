@@ -43,18 +43,16 @@ print(my_list)
 
 #5. Find the odd numbers from 1-100. Use odds as the name of the list. 
 # Remember to use list comprehensions and to print your results
-
-odd= []
-odd = [i for i in range(0,101) if  i%!==1]
+'''
+odd = [i for i in range(0,101) if i%2 !=0]
 print (odd)
-
+'''
 #6. Find all of the numbers from 1-1000 that are divisible by 7. Use divisible_by_seven as the name of the list.
 # Remember to use list comprehensions and to print your results
-
-divisible_by_seven=  []
-divisible_by_seven = [i//7==0 for i in range (0,1001)]
+'''
+divisible_by_seven = [i for i in range (0,1001)if i%7==0]
 print(divisible_by_seven)
-
+'''
 
 #7. Remove all of the vowels in a string. Hint: make a list of the non-vowels. Use non_vowels as the name of the list.
 # Remember to use list comprehensions and to print your results
@@ -91,47 +89,49 @@ print(consonants)
 #10. Find the folders you have in your madrid-oct-2028 local repo. Use files as name of the list.  
 # You will probably need to import os library and some of its modules. You will need to make some online research.
 # Remember to use list comprehensions and to print your results.
-
+'''
 import os
 datamad =[i for i in os.listdir('/home/danielgarcia/datamad0820')]
 print (datamad)
-
+'''
 #11. Create 4 lists of 10 random numbers between 0 and 100 each. Use random_lists as the name of the list. 
 #You will probably need to import random module
 # Remember to use list comprehensions and to print your results
-
+'''
 import random
-random_list= []
-random_list= [for i]
 
+random_list= [[random.randint(0,100) for i in range(10)] for i in range(4)]
+'''
 
 #12. Flatten the following list of lists. Use flatten_list as the name of the output.
 # Remember to use list comprehensions and to print your results
 
-list_of_lists = [[1,2,3],[4,5,6],[7,8,9]]
-
-
+'''list_of_lists = [[1,2,3],[4,5,6],[7,8,9]]
+flatten_lists = [item for sublist in list_of_lists for item in sublist]
+print (flatten_lists)'''
 
 #13. Convert the numbers of the following nested list to floats. Use floats as the name of the list. 
 # Remember to use list comprehensions and to print your results.
 
-list_of_lists = [['40', '20', '10', '30'], ['20', '20', '20', '20', '20', '30', '20'], \
+'''
+l = [['40', '20', '10', '30'], ['20', '20', '20', '20', '20', '30', '20'], \
 ['30', '20', '30', '50', '10', '30', '20', '20', '20'], ['100', '100'], ['100', '100', '100', '100', '100'], \
 ['100', '100', '100', '100']]
 
-
-
+floats=[i for sublist in l for i in sublist ]
+floats=[float(i) for i in floats]
+'''
 
 
 #14. Handle the exception thrown by the code below by using try and except blocks. 
-
-'''for i in ['a','b','c']:
-    try:
-        print ('Ponle parentesis a todo print!')
-        print i**2
-    except:
-        print (i**2)'''
-
+'''
+try:
+    for i in ['a','b','c']:
+        print (i**2)
+except Exception as e:
+        print (e)
+print('tipo de error')
+'''
 
 #15. Handle the exception thrown by the code below by using try and except blocks. 
 #Then use a finally block to print 'All Done.'
