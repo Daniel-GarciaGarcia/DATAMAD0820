@@ -207,10 +207,6 @@ print(' Linux manda y no tu panda')
 # Hint: we need to continually keep checking until we get an integer.
 # Use a while loop with a try,except, else block to account for incorrect inputs.
 
-def  square (num):
-	return (num*num)
-
-n = int (input("Introduce un numero: "))
 
 
 # 22. Find all of the numbers from 1-1000 that are divisible by any single digit besides 1 (2-9). 
